@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chakratapa – Intuition Game</title>
+  <meta name="description" content="Chakratapa is a mindfulness game to develop your intuitive abilities through two engaging modes: Intuition and Memory. Learn more and contact us.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .logo {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      background: #fff;
+      object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #222;
+    }
+    h2 {
+      color: #222;
+      font-size: 1.15rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+    ul, ol {
+      margin: 0 0 1.2rem 1.2rem;
+      padding: 0;
+    }
+    .chakra-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      margin: 1rem 0 1.5rem 0;
+      padding: 0;
+      list-style: none;
+      justify-content: flex-start;
+    }
+    .chakra-item {
+      display: flex;
+      align-items: center;
+      background: none;
+      border-radius: 0;
+      padding: 0.2rem 0.5rem 0.2rem 0;
+      font-size: 1rem;
+      min-width: 120px;
+      font-weight: normal;
+      color: #222;
+    }
+    .chakra-color {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      margin-right: 0.6em;
+      border: none;
+      display: inline-block;
+    }
+    .contact, .privacy {
+      margin-top: 2rem;
+      font-size: 1rem;
+      color: #222;
+      text-align: left;
+    }
+    a {
+      color: #222;
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem 0.3rem;
+      }
+      .chakra-list {
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+    }
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 1.5rem 0 2rem 0;
+    }
+    .screenshot {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid #eee;
+      background: #fafafa;
+      box-sizing: border-box;
+      object-fit: contain;
+    }
+    @media (max-width: 600px) {
+      .screenshots {
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: center;
+      }
+      .screenshot {
+        max-width: 98vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Chakratapa Game Logo" class="logo">
+      <h1>Chakratapa</h1>
+      <div>A Mindfulness Game to Awaken Your Intuition</div>
+    </header>
+    <main>
+      <h2>Game Overview</h2>
+      <p>Chakratapa is a mindfulness game designed to develop your intuitive abilities through two engaging modes: <strong>Intuition Mode</strong> and <strong>Memory Mode</strong>. Both modes feature 7 levels, each corresponding to one of the seven chakra colors.</p>
+
+      <h2>Game Preview</h2>
+      <div class="screenshots">
+        <img src="1.png" alt="Chakratapa gameplay screenshot 1" class="screenshot">
+        <img src="2.png" alt="Chakratapa gameplay screenshot 2" class="screenshot">
+        <img src="3.png" alt="Chakratapa gameplay screenshot 3" class="screenshot">
+      </div>
+
+      <h2>How to Play</h2>
+      <strong>Intuition Mode</strong>
+      <ul>
+        <li>Each level is named after its corresponding Sanskrit chakra name.</li>
+        <li>A circle is divided into segments, increasing from 1 segment at Level 1 to 7 segments at Level 7.</li>
+        <li>Colors specific to each level are randomly assigned to these segments, and each color appears only once per round.</li>
+        <li>The correct chakra color order is not shown. Your goal is to tap the segments in the correct order using your intuition.</li>
+        <li>When you tap a segment, its color is revealed. Correctly tapped segments remain colored.</li>
+        <li>Haptic feedback is provided for both correct and incorrect taps.</li>
+        <li>Tapping an incorrect segment reveals its color and resets the level with new randomly assigned colors.</li>
+        <li>Complete the full color sequence to progress to the next level.</li>
+      </ul>
+      <strong>Memory Mode</strong>
+      <ul>
+        <li>Each level is named after its corresponding Sanskrit chakra name.</li>
+        <li>At the start of each level, the correct chakra color sequence is displayed for you to memorize.</li>
+        <li>A circle is divided into segments, increasing from 1 segment at Level 1 to 7 segments at Level 7.</li>
+        <li>Colors specific to each level are randomly assigned to these segments, and each color appears only once per round.</li>
+        <li>After the sequence is shown, your goal is to tap the segments in the same order from memory.</li>
+        <li>When you tap a segment, its color is revealed. Correctly tapped segments remain colored.</li>
+        <li>Haptic feedback is provided for both correct and incorrect taps.</li>
+        <li>Tapping an incorrect segment reveals its color and resets the level with new randomly assigned colors.</li>
+        <li>Complete the full color sequence to progress to the next level.</li>
+      </ul>
+
+      <h2>Chakra Color Sequence</h2>
+      <ul class="chakra-list">
+        <li class="chakra-item"><span class="chakra-color" style="background:#ED010A"></span>Red – Muladhara (Root Chakra)</li>
+        <li class="chakra-item"><span class="chakra-color" style="background:#F57100"></span>Orange – Svadhisthana (Sacral Chakra)</li>
+        <li class="chakra-item"><span class="chakra-color" style="background:#FFB400"></span>Yellow – Manipura (Solar Plexus Chakra)</li>
+        <li class="chakra-item"><span class="chakra-color" style="background:#00A653"></span>Green – Anahata (Heart Chakra)</li>
+        <li class="chakra-item"><span class="chakra-color" style="background:#06ADED"></span>Blue – Vishuddha (Throat Chakra)</li>
+        <li class="chakra-item"><span class="chakra-color" style="background:#2E48A5"></span>Indigo – Ajna (Third Eye Chakra)</li>
+        <li class="chakra-item"><span class="chakra-color" style="background:#A5118E"></span>Purple – Sahasrara (Crown Chakra)</li>
+      </ul>
+
+      <h2>Level Progression</h2>
+      <ul>
+        <li>Level 1 (Muladhara): A single-segment circle. Tap it to reveal red and complete the level.</li>
+        <li>Level 2 (Svadhisthana): The circle splits into two segments. Tap in order: red → orange.</li>
+        <li>Level 3 (Manipura): The circle has three segments. Tap in order: red → orange → yellow.</li>
+        <li>Level 4 (Anahata): The circle divides into four segments. Tap in order: red → orange → yellow → green.</li>
+        <li>Level 5 (Vishuddha): The circle has five segments. Tap in order: red → orange → yellow → green → blue.</li>
+        <li>Level 6 (Ajna): The circle has six segments. Tap in order: red → orange → yellow → green → blue → indigo.</li>
+        <li>Level 7 (Sahasrara): The final level. Tap in order: red → orange → yellow → green → blue → indigo → purple.</li>
+      </ul>
+
+      <h2>Controls & Navigation</h2>
+      <ul>
+        <li>Tap directly on circle segments to select them.</li>
+        <li>Access the main menu at any time by swiping back. <strong>Note:</strong> swiping back will exit your current game session.</li>
+        <li>Use the available buttons in the app interface to view the rules or return to the main menu.</li>
+      </ul>
+
+      <h2>Tips for Success</h2>
+      <ul>
+        <li>Clear your mind before making selections.</li>
+        <li>Trust your initial instincts.</li>
+        <li>Pay attention to subtle feelings or impressions before tapping.</li>
+        <li>Practice mindfulness during gameplay to enhance your intuitive abilities.</li>
+      </ul>
+
+      <div class="privacy">
+        <h2>Privacy Policy</h2>
+        <p>Chakratapa does not collect, store, or share any personal data from users. The game is completely free to play and does not require registration, login, or the submission of any personal information.</p>
+        <ul>
+          <li><strong>Data Collection:</strong> Chakratapa does not collect, store, or process any personal or usage data.</li>
+          <li><strong>Data Usage:</strong> No data is used for analytics, advertising, or any other purpose.</li>
+          <li><strong>Third-Party Sharing:</strong> No data is shared with third parties or external services.</li>
+          <li><strong>Cookies and Tracking:</strong> Chakratapa does not use cookies or any tracking technologies.</li>
+          <li><strong>Children's Privacy:</strong> Chakratapa is suitable for all ages and does not knowingly collect any information from children under the age of 13, in compliance with COPPA.</li>
+          <li><strong>User Rights:</strong> Since no data is collected or stored, users do not need to request access, deletion, or correction of their data. If you have any privacy-related questions, please contact us at <a href="mailto:support@chakratapa.app">support@chakratapa.app</a>.</li>
+          <li><strong>Data Retention and Security:</strong> No user data is retained or stored, so there are no security risks related to data storage.</li>
+          <li><strong>Compliance:</strong> Chakratapa complies with all applicable privacy laws and regulations, including GDPR, CCPA, and COPPA.</li>
+        </ul>
+        <p>If our data practices change in the future, we will update this policy and notify users as required.</p>
+      </div>
+
+      <div class="contact">
+        <h2>Contact & Support</h2>
+        <p>For support, feedback, or questions about Chakratapa, please email:<br>
+          <a href="mailto:rutobo35@gmail.com">rutobo35@gmail.com</a>
+        </p>
+        <p style="font-size:0.95em;color:#888;">&copy; 2025 Chakratapa. All rights reserved.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html> 
